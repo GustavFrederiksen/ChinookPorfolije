@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Map - Leaflet.js</title>
+    <title>Chinook Project</title>
 
     <link
             rel="shortcut icon"
@@ -23,6 +23,7 @@
             integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
             crossorigin=""
     ></script>
+    <link rel="stylesheet" href="style.css">
 
     <style>
         html,
@@ -70,9 +71,35 @@
     </style>
 </head>
 <body>
-<div id="map"></div>
 
+<div id="display">
+
+    <h1> Chinooks new store</h1>
+
+    <p> Top 5 countries with orders at Chinook </p>
+        <div id="OrdrePerCountry">
+            <img src="MicrosoftTeams-image.png" alt="Country Sales" width="800" height="500">
+        </div>
+
+    <br>
+
+    <p> Top 5 countries with most money spend at Chinook</p>
+        <div id="TotalSalesCountry">
+            <img src="MicrosoftTeams-image (1).png" alt="Total Sales By Country"width="800" height="500">
+        </div>
+
+    <br>
+
+    <p> Map of each sales bought in the US, and where the new store could be placed</p>
+        <div id="map">
+        </div>
+
+    <br>
+
+</div>
 <script src="chinook.js"></script>
 <script src="main.js"></script>
+<script src="bar.js"></script>
+
 </body>
 </html>

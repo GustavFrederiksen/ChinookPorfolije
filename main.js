@@ -11,41 +11,29 @@ for (let i = 0; i <chinookUsSalesLatLng.length; i++) {
     let  popup = L.popup().setContent(chinookUsSales.city + chinookUsSales.state);
     currentMarker.bindPopup(popup).openPopup();
     currentMarker.addTo(map);
-}
+};
 
+var redIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
 
-/*
+//L.marker([38.575947, -121.475962], {icon: redIcon}).addTo(map);
+    const homeMarker = L.marker([38.575947, -121.475962], {icon: redIcon}, { bounceOnAdd: true });
+    homeMarker.bindPopup('Our New Store', {
+        closeButton: true
+    });
+    homeMarker.addTo(map);
 
-for (let i = 0; i < chinookUsSalesLatLng.length; i++) {
-    L.to([chinookUsSalesLatLng[i].lat, chinookUsSalesLatLng[i].lng]).onmouseover(map);
-    console.log(i)
-}*/
+/*const chinookPopups = L.marker([currentMarker], { bounceOnAdd: true });
+chinookPopups.bindPopup(chinookUsSales.city + chinookUsSales.state, {
+    closeButton: true
+});
+chinookPopups.addTo(map);
 
-
-
-/*const popup = L.popup();
-
-function onMapClick() {
-    popup
-        .setLatLng(chinookUsSalesLatLng)
-        .setContent(chinookUsSales.city + chinookUsSales.state + chinookUsSalesLatLng.toString())
-        .openOn(map);
-}
-
-
-map.on('click', onMapClick);
-
- */
-
-
-/*
-map.addLayer();
-    const markers =[];
-    const marker1 = L.marker([chinookUsSalesLatLng],{title: 'marker_1'}).addTo(map).bindPopup('marker 1');
-    markers.push(marker1);
-
-    marker1.on('mouseover', function (ev){
-        marker1.openPopup();
-})
 
  */

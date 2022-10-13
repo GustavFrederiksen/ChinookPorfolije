@@ -1,1 +1,25 @@
-#map
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(248, 169, 102, 0.9);
+}
+
+h1 {
+    text-align: center;
+    font-family: "Arial Black";
+}
+
+p {
+    text-align: center;
+    font-family: "Arial Black";
+}
+
+#TotalSalesCountry{
+    border-style: dotted;
+    border-width: medium;
+}
+
+#OrdrePerCountry{
+    border-style: dotted;
+    border-width: medium;
+}

@@ -69,7 +69,7 @@ const chinookUsSales = {
             state: 'Massachusetts',
             amount: 7,
             'lat, lng': '42.361145, -71.057083',
-        }
+        },
     ],
 };
 
